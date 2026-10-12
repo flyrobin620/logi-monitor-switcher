@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="370" viewBox="0 0 1000 370" role="img" aria-labelledby="title desc">
+  <title id="title">Main Monitor Switch: one folder, every display</title>
+  <desc id="desc">Illustration of an Actions Ring folder opening three numbered monitor actions. Monitor 2 is highlighted as the current main display.</desc>
+  <rect width="1000" height="370" rx="24" fill="#101923"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="40" y="52" fill="#ffffff" font-size="28" font-weight="700">Your main display, one click away.</text>
+    <text x="40" y="82" fill="#b0c3d3" font-size="16">Actions Ring &#x2192; Main Monitor Switch &#x2192; choose a monitor</text>
+    <rect x="42" y="117" width="243" height="202" rx="20" fill="#1c2d3d"/>
+    <rect x="113" y="160" width="67" height="42" rx="5" fill="#11263a" stroke="#ffffff" stroke-width="5"/>
+    <rect x="139" y="178" width="67" height="42" rx="5" fill="#11263a" stroke="#69c9ff" stroke-width="5"/>
+    <path d="M171 222v12m-16 0h34M106 232h25l-8-8m8 8-8 8" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="163" y="281" fill="#ffffff" font-size="18" text-anchor="middle">Main Monitor Switch</text>
+    <path d="M309 217h46l-11-11m11 11-11 11" stroke="#69c9ff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#1c2d3d">
+      <rect x="387" y="117" width="173" height="202" rx="20"/>
+      <rect x="580" y="117" width="173" height="202" rx="20"/>
+      <rect x="773" y="117" width="185" height="202" rx="20"/>
+    </g>
+    <g fill="#11263a" stroke-width="5">
+      <rect x="436" y="164" width="76" height="52" rx="5" stroke="#ffffff"/>
+      <rect x="628" y="164" width="76" height="52" rx="5" stroke="#63edac"/>
+      <rect x="827" y="164" width="76" height="52" rx="5" stroke="#ffffff"/>
+    </g>
+    <g fill="none" stroke-width="5" stroke-linecap="round">
+      <path d="M474 219v13m-15 0h30" stroke="#ffffff"/>
+      <path d="M666 219v13m-15 0h30" stroke="#63edac"/>
+      <path d="M865 219v13m-15 0h30" stroke="#ffffff"/>
+    </g>
+    <g font-size="38" font-weight="700" text-anchor="middle">
+      <text x="474" y="204" fill="#ffffff">1</text>
+      <text x="666" y="204" fill="#63edac">2</text>
+      <text x="865" y="204" fill="#ffffff">3</text>
+    </g>
+    <path d="m706 145 5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2z" fill="#ffd15b"/>
+    <g font-size="18" text-anchor="middle">
+      <text x="474" y="269" fill="#ffffff">Desk monitor</text>
+      <text x="666" y="269" fill="#63edac">TV &#x2022; Main</text>
+      <text x="865" y="269" fill="#ffffff">Portrait display</text>
+    </g>
+    <text x="958" y="346" text-anchor="end" fill="#91aabd" font-size="13">Illustration &#x2022; actual layout is managed by Logi Options+</text>
+  </g>
+</svg>

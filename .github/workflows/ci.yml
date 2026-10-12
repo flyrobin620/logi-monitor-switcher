@@ -1,0 +1,24 @@
+name: Windows checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Run non-destructive regression checks
+        run: dotnet run --project .\tests\MonitorSwitcher.Tests\MonitorMenu.Tests.csproj -c Release
+      - name: Build the import wizard
+        run: dotnet build .\src\MonitorSwitcher.Setup\MonitorSwitcher.LogiSetup.csproj -c Release --nologo
+      # The plugin itself requires PluginApi.dll from an installed Logi host.
+      # We do not download or redistribute Logitech's proprietary SDK binary.

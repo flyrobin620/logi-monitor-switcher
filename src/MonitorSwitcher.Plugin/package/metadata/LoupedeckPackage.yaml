@@ -1,0 +1,14 @@
+type: plugin4
+name: MonitorSwitcher
+displayName: Monitor Switcher
+description: Choose the Windows main monitor from Main Monitor Switch.
+version: 1.0.0
+author: flyrobin620
+pluginFileName: MonitorSwitcherPlugin.dll
+pluginFolderWin: bin
+supportedDevices:
+  - LoupedeckExtendedFamily
+license: MIT
+licenseUrl: https://github.com/flyrobin620/logi-monitor-switcher/blob/main/LICENSE
+homePageUrl: https://github.com/flyrobin620/logi-monitor-switcher
+supportPageUrl: https://github.com/flyrobin620/logi-monitor-switcher/issues

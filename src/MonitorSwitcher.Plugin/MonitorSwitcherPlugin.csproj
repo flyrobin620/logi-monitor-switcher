@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>Loupedeck.MonitorSwitcherPlugin</RootNamespace>
+    <AssemblyName>MonitorSwitcherPlugin</AssemblyName>
+    <PluginApiDir Condition="'$(PluginApiDir)' == ''">$(ProgramW6432)\Logi\LogiPluginService</PluginApiDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\artifacts\plugin\bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PluginApi">
+      <HintPath>$(PluginApiDir)\PluginApi.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Compile Include="..\MonitorSwitcher.Shared\*.cs" Link="Shared\%(Filename)%(Extension)" />
+  </ItemGroup>
+  <Target Name="CheckPluginSdk" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(PluginApiDir)\PluginApi.dll')"
+           Text="Install Logi Options+ with Logi Plugin Service, or set -p:PluginApiDir to its directory." />
+  </Target>
+  <Target Name="CopyPluginMetadata" AfterTargets="Build">
+    <ItemGroup>
+      <PluginMetadata Include="package\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PluginMetadata)"
+          DestinationFolder="$(OutputPath)..\%(RecursiveDir)" />
+  </Target>
+</Project>

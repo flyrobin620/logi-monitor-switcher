@@ -1,0 +1,29 @@
+# Build outputs and local tools
+**/bin/
+**/obj/
+artifacts/
+dist/
+.tools/
+
+# Personal profiles, binaries, diagnostics, and credentials are never source.
+*.lp5
+*.lplug4
+*.dll
+*.exe
+*.pdb
+*.log
+*.dmp
+*.link
+*.lnk
+.env
+.env.*
+*.pfx
+*.key
+
+# Editor and OS state
+.vs/
+.idea/
+*.user
+*.suo
+Thumbs.db
+desktop.ini
